@@ -1,0 +1,44 @@
+{
+    "name": "crowns-development/laravel-setup",
+    "description": "Company standards for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CrownsDevelopment\\LaravelSetup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CrownsDevelopment\\LaravelSetup\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jeffrey Kroonen"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CrownsDevelopment\\LaravelSetup\\LaravelSetupServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "laravel/prompts": "^0.3.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*",
+        "pestphp/pest": "*",
+        "pestphp/pest-plugin-laravel": "*",
+        "orchestra/pest-plugin-testbench": "^4.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

@@ -1,0 +1,22 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app
+        - routes
+        - database
+        - tests
+
+    level: 5
+
+    checkModelProperties: true
+
+    checkOctaneCompatibility: true
+
+    reportUnmatchedIgnoredErrors: false
+
+    scanFiles:
+        - _ide_helper_models.php
+        - _ide_helper.php
