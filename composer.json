@@ -18,7 +18,6 @@
             "name": "Jeffrey Kroonen"
         }
     ],
-    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
@@ -28,7 +27,7 @@
     },
     "require": {
         "php": "^8.4",
-        "laravel/prompts": "^0.3.16"
+        "illuminate/support": "^11.0"
     },
     "require-dev": {
         "orchestra/testbench": "*",
@@ -40,5 +39,7 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
